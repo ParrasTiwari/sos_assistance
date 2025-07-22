@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 20 14.3% 95.9%; /* #FBF9F8 - Very light, warm off-white */
+    --foreground: 20 14.3% 10%; /* #262322 - Almost black, warm */
+
+    --card: 20 14.3% 95.9%;
+    --card-foreground: 20 14.3% 10%;
+
+    --popover: 20 14.3% 95.9%;
+    --popover-foreground: 20 14.3% 10%;
+
+    --primary: 24.6 95% 53.1%; /* #F97316 - Vibrant Orange */
+    --primary-foreground: 0 0% 100%; /* White */
+    
+    --secondary: 24 9.8% 83.9%; /* #D9D4D0 - Light warm gray */
+    --secondary-foreground: 20 14.3% 10%;
+
+    --muted: 24 9.8% 89.9%; /* #E8E5E3 */
+    --muted-foreground: 20 14.3% 40%;
+
+    --accent: 35.6 91.7% 65.1%; /* #FDBA74 - Lighter, softer orange */
+    --accent-foreground: 20 14.3% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 24 9.8% 80.9%;
+    --input: 24 9.8% 85.9%;
+    --ring: 24.6 95% 53.1%; /* Vibrant Orange */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%; /* #1C1917 - Very dark brown */
+    --foreground: 20 14.3% 95.9%; /* #FBF9F8 - Light off-white */
+
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 20 14.3% 95.9%;
+
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 20 14.3% 95.9%;
+
+    --primary: 24.6 95% 53.1%; /* #F97316 - Vibrant Orange */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 24 9.8% 13.9%; /* #292524 - Dark warm gray */
+    --secondary-foreground: 20 14.3% 95.9%;
+
+    --muted: 24 9.8% 13.9%;
+    --muted-foreground: 20 14.3% 60%;
+
+    --accent: 35.6 91.7% 65.1%; /* #FDBA74 - Lighter, softer orange */
+    --accent-foreground: 20 14.3% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 24 9.8% 13.9%;
+    --input: 24 9.8% 13.9%;
+    --ring: 24.6 95% 53.1%; /* Vibrant Orange */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
